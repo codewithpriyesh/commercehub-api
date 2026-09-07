@@ -1,8 +1,8 @@
 import { app } from "./app.js";
+import { env } from "./config/env.js";
 
-const PORT = 3000;
-const HOST = "0.0.0.0";
-
-app.listen(PORT, HOST, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+app.listen(env.PORT, env.HOST, () => {
+  console.log(
+    `Server is running in ${env.NODE_ENV} mode at http://localhost:${env.PORT}`,
+  );
 });
