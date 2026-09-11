@@ -1,6 +1,6 @@
 import { PRODUCT_STATUS, type Product } from "../product.types.js";
 
-export const products = [
+export const products: Product[] = [
   {
     id: "prod_001",
     name: "Mechanical Keyboard",
@@ -21,4 +21,4 @@ export const products = [
     createdAt: new Date(),
     updatedAt: new Date(),
   },
-] satisfies Product[];
+]
