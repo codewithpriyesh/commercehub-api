@@ -24,3 +24,7 @@ export function createProduct(input: CreateProductInput): Product {
 export function findProductById(id: string): Product | undefined {
     return products.find((product) => product.id === id);
 }
+
+export function listProducts(): readonly Product[] {
+    return products;
+}
